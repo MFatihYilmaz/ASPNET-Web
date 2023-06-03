@@ -1,0 +1,79 @@
+@model WebProgramlama.Models.Currency;
+@{
+    int x = 0;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form asp-controller="Home" asp-action="FinanceApi" method="post" class="form-inline">
+  <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Currency Converter</label>
+  <select name="code" class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>Choose...</option>
+    @foreach (var item in ViewBag.List)
+    {
+      <option value="@item">@item</option>
+    }
+  </select>
+
+  <button type="submit" class="btn btn-primary my-1">Submit</button>
+</form>
+@if (Model!=null)
+{
+  <div class="container">
+    <div class="row">
+
+  @foreach (var keyValuePair in Model.Data)
+{
+      x++;
+        if(x%2==0){
+          <div class="col-4">
+      <div class="card m-5 mb-3">
+      
+        <div class="card-header bg-info">
+       
+          <h4 class="card-title">@keyValuePair.Key</h4>
+        </div>
+        <div class="card-body bg-dark text-white">
+            <p class="card-text">
+              @keyValuePair.Value
+
+            </p>
+        </div>
+      </div>
+      </div>
+        }else{
+          <div class="col-4">
+      <div class="card m-5 mb-3">
+      
+        <div class="card-header bg-warning">
+       
+          <h4 class="card-title">@keyValuePair.Key</h4>
+        </div>
+        <div class="card-body bg-dark text-white">
+            <p class="card-text">
+              @keyValuePair.Value
+
+            </p>
+        </div>
+      </div>
+      </div>
+   
+        }
+      
+   
+    
+}
+ </div>
+ </div>
+}
+
+
+
+</body>
+</html>
