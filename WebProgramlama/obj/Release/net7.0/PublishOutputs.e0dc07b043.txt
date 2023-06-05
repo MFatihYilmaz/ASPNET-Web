@@ -1,0 +1,7 @@
+C:\Users\mfth7\source\repos\WebProgramlama\WebProgramlama\bin\Release\net7.0\publish\WebProgramlama.exe
+C:\Users\mfth7\source\repos\WebProgramlama\WebProgramlama\bin\Release\net7.0\publish\appsettings.Development.json
+C:\Users\mfth7\source\repos\WebProgramlama\WebProgramlama\bin\Release\net7.0\publish\appsettings.json
+C:\Users\mfth7\source\repos\WebProgramlama\WebProgramlama\bin\Release\net7.0\publish\WebProgramlama.dll
+C:\Users\mfth7\source\repos\WebProgramlama\WebProgramlama\bin\Release\net7.0\publish\WebProgramlama.deps.json
+C:\Users\mfth7\source\repos\WebProgramlama\WebProgramlama\bin\Release\net7.0\publish\WebProgramlama.runtimeconfig.json
+C:\Users\mfth7\source\repos\WebProgramlama\WebProgramlama\bin\Release\net7.0\publish\WebProgramlama.pdb
